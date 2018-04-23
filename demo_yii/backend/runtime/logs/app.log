@@ -1,0 +1,499 @@
+2018-04-23 16:39:46 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in G:\demo_yii\backend\views\site\index.php:26
+Stack trace:
+#0 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\demo_yii\\bac...', Array)
+#1 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\demo_yii\\bac...', Array, Object(backend\controllers\SiteController))
+#2 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#3 G:\demo_yii\backend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#4 [internal function]: backend\controllers\SiteController->actionIndex()
+#5 G:\demo_yii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 G:\demo_yii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 G:\demo_yii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#9 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2018-04-23 16:39:45 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2216'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54031'
+    'SCRIPT_FILENAME' => 'G:/demo_yii/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.blog.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.blog.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524472784.4597
+    'REQUEST_TIME' => 1524472784
+]
+2018-04-23 16:40:07 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either 'name', or 'model' and 'attribute' properties must be specified. in G:\demo_yii\vendor\yiisoft\yii2\widgets\InputWidget.php:75
+Stack trace:
+#0 G:\demo_yii\vendor\kucha\ueditor\UEditor.php(43): yii\widgets\InputWidget->init()
+#1 G:\demo_yii\vendor\yiisoft\yii2\base\BaseObject.php(109): kucha\ueditor\UEditor->init()
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 G:\demo_yii\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 G:\demo_yii\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('kucha\\ueditor\\U...', Array, Array)
+#5 G:\demo_yii\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('kucha\\ueditor\\U...', Array, Array)
+#6 G:\demo_yii\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#7 G:\demo_yii\backend\views\site\index.php(27): yii\base\Widget::widget(Array)
+#8 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(336): require('G:\\demo_yii\\bac...')
+#9 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\demo_yii\\bac...', Array)
+#10 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\demo_yii\\bac...', Array, Object(backend\controllers\SiteController))
+#11 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#12 G:\demo_yii\backend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 G:\demo_yii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 G:\demo_yii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 G:\demo_yii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#18 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2018-04-23 16:40:07 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2216'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54073'
+    'SCRIPT_FILENAME' => 'G:/demo_yii/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.blog.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.blog.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524472807.3185
+    'REQUEST_TIME' => 1524472807
+]
+2018-04-23 16:40:46 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either 'name', or 'model' and 'attribute' properties must be specified. in G:\demo_yii\vendor\yiisoft\yii2\widgets\InputWidget.php:75
+Stack trace:
+#0 G:\demo_yii\vendor\kucha\ueditor\UEditor.php(43): yii\widgets\InputWidget->init()
+#1 G:\demo_yii\vendor\yiisoft\yii2\base\BaseObject.php(109): kucha\ueditor\UEditor->init()
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 G:\demo_yii\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 G:\demo_yii\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('kucha\\ueditor\\U...', Array, Array)
+#5 G:\demo_yii\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('kucha\\ueditor\\U...', Array, Array)
+#6 G:\demo_yii\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#7 G:\demo_yii\backend\views\site\index.php(8): yii\base\Widget::widget(Array)
+#8 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(336): require('G:\\demo_yii\\bac...')
+#9 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\demo_yii\\bac...', Array)
+#10 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\demo_yii\\bac...', Array, Object(backend\controllers\SiteController))
+#11 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#12 G:\demo_yii\backend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 G:\demo_yii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 G:\demo_yii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 G:\demo_yii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#18 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2018-04-23 16:40:46 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2216'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54156'
+    'SCRIPT_FILENAME' => 'G:/demo_yii/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.blog.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.blog.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524472846.4269
+    'REQUEST_TIME' => 1524472846
+]
+2018-04-23 16:40:52 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either 'name', or 'model' and 'attribute' properties must be specified. in G:\demo_yii\vendor\yiisoft\yii2\widgets\InputWidget.php:75
+Stack trace:
+#0 G:\demo_yii\vendor\kucha\ueditor\UEditor.php(43): yii\widgets\InputWidget->init()
+#1 G:\demo_yii\vendor\yiisoft\yii2\base\BaseObject.php(109): kucha\ueditor\UEditor->init()
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 G:\demo_yii\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 G:\demo_yii\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('kucha\\ueditor\\U...', Array, Array)
+#5 G:\demo_yii\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('kucha\\ueditor\\U...', Array, Array)
+#6 G:\demo_yii\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#7 G:\demo_yii\backend\views\site\index.php(8): yii\base\Widget::widget(Array)
+#8 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(336): require('G:\\demo_yii\\bac...')
+#9 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\demo_yii\\bac...', Array)
+#10 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\demo_yii\\bac...', Array, Object(backend\controllers\SiteController))
+#11 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#12 G:\demo_yii\backend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 G:\demo_yii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 G:\demo_yii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 G:\demo_yii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#18 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2018-04-23 16:40:52 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2216'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54158'
+    'SCRIPT_FILENAME' => 'G:/demo_yii/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.blog.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.blog.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524472852.016
+    'REQUEST_TIME' => 1524472852
+]
+2018-04-23 16:40:53 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either 'name', or 'model' and 'attribute' properties must be specified. in G:\demo_yii\vendor\yiisoft\yii2\widgets\InputWidget.php:75
+Stack trace:
+#0 G:\demo_yii\vendor\kucha\ueditor\UEditor.php(43): yii\widgets\InputWidget->init()
+#1 G:\demo_yii\vendor\yiisoft\yii2\base\BaseObject.php(109): kucha\ueditor\UEditor->init()
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 G:\demo_yii\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 G:\demo_yii\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('kucha\\ueditor\\U...', Array, Array)
+#5 G:\demo_yii\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('kucha\\ueditor\\U...', Array, Array)
+#6 G:\demo_yii\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#7 G:\demo_yii\backend\views\site\index.php(8): yii\base\Widget::widget(Array)
+#8 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(336): require('G:\\demo_yii\\bac...')
+#9 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\demo_yii\\bac...', Array)
+#10 G:\demo_yii\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\demo_yii\\bac...', Array, Object(backend\controllers\SiteController))
+#11 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#12 G:\demo_yii\backend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 G:\demo_yii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 G:\demo_yii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 G:\demo_yii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 G:\demo_yii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#18 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2018-04-23 16:40:53 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2216'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54159'
+    'SCRIPT_FILENAME' => 'G:/demo_yii/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.blog.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.blog.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524472853.2468
+    'REQUEST_TIME' => 1524472853
+]
+2018-04-23 16:48:23 [127.0.0.1][-][mdm6i5mp5943pdibgobqaoqav0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "upload/20180423/1524473302225174.jpg". in G:\demo_yii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\demo_yii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('upload/20180423...', Array)
+#1 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\demo_yii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-23 16:48:23 [127.0.0.1][-][mdm6i5mp5943pdibgobqaoqav0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'mdm6i5mp5943pdibgobqaoqav0'
+    '_csrf-backend' => '6db93e9a9ffeb7c58641af738821d771d22c0160ded3749d6e9f8649f39d1c08a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"XzZjBSu3gfsKlmTbmbiGQllXnQLxA3ab\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '940'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/upload/20180423/1524473302225174.jpg'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/upload/20180423/1524473302225174.jpg'
+    'REMOTE_PORT' => '55252'
+    'SCRIPT_FILENAME' => 'G:/demo_yii/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.blog.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=mdm6i5mp5943pdibgobqaoqav0; _csrf-backend=6db93e9a9ffeb7c58641af738821d771d22c0160ded3749d6e9f8649f39d1c08a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22XzZjBSu3gfsKlmTbmbiGQllXnQLxA3ab%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.blog.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524473303.4991
+    'REQUEST_TIME' => 1524473303
+]
+2018-04-23 16:49:49 [127.0.0.1][-][mdm6i5mp5943pdibgobqaoqav0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "uedtiorUploads/upload/20180423/1524473389896572.jpg". in G:\demo_yii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\demo_yii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('uedtiorUploads/...', Array)
+#1 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\demo_yii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\demo_yii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\demo_yii\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-23 16:49:49 [127.0.0.1][-][mdm6i5mp5943pdibgobqaoqav0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'mdm6i5mp5943pdibgobqaoqav0'
+    '_csrf-backend' => '6db93e9a9ffeb7c58641af738821d771d22c0160ded3749d6e9f8649f39d1c08a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"XzZjBSu3gfsKlmTbmbiGQllXnQLxA3ab\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '940'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/uedtiorUploads/upload/20180423/1524473389896572.jpg'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/uedtiorUploads/upload/20180423/1524473389896572.jpg'
+    'REMOTE_PORT' => '55466'
+    'SCRIPT_FILENAME' => 'G:/demo_yii/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/demo_yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.blog.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=mdm6i5mp5943pdibgobqaoqav0; _csrf-backend=6db93e9a9ffeb7c58641af738821d771d22c0160ded3749d6e9f8649f39d1c08a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22XzZjBSu3gfsKlmTbmbiGQllXnQLxA3ab%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.blog.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524473389.1914
+    'REQUEST_TIME' => 1524473389
+]
